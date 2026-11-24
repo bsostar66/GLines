@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9A12494E-519F-40F7-8580-CFBD901C2DED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BŠoštar___GLines</RootNamespace>
+    <AssemblyName>BŠoštar___GLines</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DBLayer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLLs\DBLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaAzurirajLiniju.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaAzurirajLiniju.Designer.cs">
+      <DependentUpon>FormaAzurirajLiniju.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaAzurirajStanicu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaAzurirajStanicu.Designer.cs">
+      <DependentUpon>FormaAzurirajStanicu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaAzurirajVozilo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaAzurirajVozilo.Designer.cs">
+      <DependentUpon>FormaAzurirajVozilo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaAzurirajVozniRed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaAzurirajVozniRed.Designer.cs">
+      <DependentUpon>FormaAzurirajVozniRed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaDodajLiniju.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaDodajLiniju.Designer.cs">
+      <DependentUpon>FormaDodajLiniju.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaDodajStanicu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaDodajStanicu.Designer.cs">
+      <DependentUpon>FormaDodajStanicu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaDodajVozilo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaDodajVozilo.Designer.cs">
+      <DependentUpon>FormaDodajVozilo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaDodajVozniRed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaDodajVozniRed.Designer.cs">
+      <DependentUpon>FormaDodajVozniRed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaZaDodatneInformacije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaZaDodatneInformacije.Designer.cs">
+      <DependentUpon>FormaZaDodatneInformacije.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaZaLiniju.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaZaLiniju.Designer.cs">
+      <DependentUpon>FormaZaLiniju.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaZaPrijavu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaZaPrijavu.Designer.cs">
+      <DependentUpon>FormaZaPrijavu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaZaPutnike.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaZaPutnike.Designer.cs">
+      <DependentUpon>FormaZaPutnike.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaZaStanicu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaZaStanicu.Designer.cs">
+      <DependentUpon>FormaZaStanicu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaZaVozila.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaZaVozila.Designer.cs">
+      <DependentUpon>FormaZaVozila.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaZaVozniRed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaZaVozniRed.Designer.cs">
+      <DependentUpon>FormaZaVozniRed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaZaZaposlenike.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaZaZaposlenike.Designer.cs">
+      <DependentUpon>FormaZaZaposlenike.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Linija.cs" />
+    <Compile Include="Models\Stanica.cs" />
+    <Compile Include="Models\StanicaLinija.cs" />
+    <Compile Include="Models\Vozilo.cs" />
+    <Compile Include="Models\VozniRed.cs" />
+    <Compile Include="Models\Zaposlenik.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repozitoriji\LinijaRepozitorij.cs" />
+    <Compile Include="Repozitoriji\StanicaLinijaRepozitorij.cs" />
+    <Compile Include="Repozitoriji\StanicaRepozitorij.cs" />
+    <Compile Include="Repozitoriji\VoziloRepozitorij.cs" />
+    <Compile Include="Repozitoriji\VozniRedRepozitorij.cs" />
+    <Compile Include="Repozitoriji\ZaposlenikRepozitorij.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaAzurirajLiniju.resx">
+      <DependentUpon>FormaAzurirajLiniju.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaAzurirajStanicu.resx">
+      <DependentUpon>FormaAzurirajStanicu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaAzurirajVozilo.resx">
+      <DependentUpon>FormaAzurirajVozilo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaAzurirajVozniRed.resx">
+      <DependentUpon>FormaAzurirajVozniRed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaDodajLiniju.resx">
+      <DependentUpon>FormaDodajLiniju.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaDodajStanicu.resx">
+      <DependentUpon>FormaDodajStanicu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaDodajVozilo.resx">
+      <DependentUpon>FormaDodajVozilo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaDodajVozniRed.resx">
+      <DependentUpon>FormaDodajVozniRed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaZaDodatneInformacije.resx">
+      <DependentUpon>FormaZaDodatneInformacije.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaZaLiniju.resx">
+      <DependentUpon>FormaZaLiniju.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaZaPrijavu.resx">
+      <DependentUpon>FormaZaPrijavu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaZaPutnike.resx">
+      <DependentUpon>FormaZaPutnike.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaZaStanicu.resx">
+      <DependentUpon>FormaZaStanicu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaZaVozila.resx">
+      <DependentUpon>FormaZaVozila.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaZaVozniRed.resx">
+      <DependentUpon>FormaZaVozniRed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaZaZaposlenike.resx">
+      <DependentUpon>FormaZaZaposlenike.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLLs\DBLayer.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
